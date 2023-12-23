@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+}
+body{
+  cursor: url(./assets/images/goodnight1.cur), auto;
+
+  a:hover {
+    cursor: url('./assets/images/Baseball.cur'), auto;
+  }
+}
