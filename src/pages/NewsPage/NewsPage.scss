@@ -1,0 +1,43 @@
+// Noticias.scss
+.noticias-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 140px;
+  }
+  
+  .noticia-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .news__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .contenido-noticia {
+    padding: 20px;
+  }
+  
+  .fecha {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .resumen {
+    color: #555;
+  }
+  
+  .autor {
+    font-weight: bold;
+  }
+  

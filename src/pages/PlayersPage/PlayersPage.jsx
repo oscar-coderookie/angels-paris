@@ -22,24 +22,22 @@ const PlayersPage = () => {
       <table>
         <thead>
           <tr>
+            <th>Foto</th>
             <th>Nombre</th>
             <th>Posición</th>
             <th>Edad</th>
             <th>Dorsal</th>
-            
-            <th>Hits</th>
-            <th>Carreras</th>
           </tr>
         </thead>
         <tbody>
           {jugadores.map((jugador, index) => (
             <tr key={index}>
+              <td><img className='jugadores__placeholder' src={"https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg"} alt="" />{jugador.foto}</td>
               <td>{jugador.nombre}</td>
               <td>{jugador.posicion}</td>
-              <td>{jugador.hits}</td>
               <td>{jugador.dorsal}</td>
               <td>{jugador.edad}</td>
-              <td>{jugador.carreras_anotadas}</td>
+
             </tr>
           ))}
         </tbody>

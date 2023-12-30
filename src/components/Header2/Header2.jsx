@@ -32,7 +32,7 @@ const Header2 = () => {
                     ></Hamburger>
                 </div>
                 <div className="header-logo">
-                    <h2>ANGELS PARIS BASEBALL</h2>
+                    <h2>ANGELS PARIS</h2>
                     <img src={logo} alt="header-img" />
                 </div>
             </div>
