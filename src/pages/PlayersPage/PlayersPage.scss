@@ -1,0 +1,41 @@
+// Jugadores.scss
+.jugadores-container {
+    max-width: 800px;
+     font-family: 'Sarala', sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+justify-content: center;
+
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; // Añadimos una línea divisoria en la parte inferior de cada celda
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+  }
+
+  
+  @media (max-width: 600px) {
+    th, td {
+      font-size: 14px;
+    }
+  }

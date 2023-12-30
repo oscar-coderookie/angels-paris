@@ -3,13 +3,17 @@ import { NavLink } from "react-router-dom";
 import "./Header2.scss";
 import logo from '../../assets/images/logo-header.png';
 import { Slant as Hamburger } from "hamburger-react";
+import NavSocial from "../NavSocial/NavSocial";
 
 const Header2 = () => {
     const [open, setOpen] = useState(false);
     const menuLinks = [
         { name: "Home", url: "/" },
         { name: "galeria", url: "/gallery" },
+        { name: "equipo", url: "/team" },
+        { name: "calendario", url: "/season" },
         { name: "contacto", url: "/contact" },
+        { name: "noticias", url: "/news" },
     ];
 
     return (
@@ -28,7 +32,7 @@ const Header2 = () => {
                     ></Hamburger>
                 </div>
                 <div className="header-logo">
-                    <h2>ANGELS PARIS BÉISBOL CLUB</h2>
+                    <h2>ANGELS PARIS BASEBALL</h2>
                     <img src={logo} alt="header-img" />
                 </div>
             </div>
@@ -43,6 +47,8 @@ const Header2 = () => {
                                     </NavLink>
                                 </li>
                             ))}
+                      
+                            <NavSocial/>
                         </ul>
                     </div>
                 </nav>

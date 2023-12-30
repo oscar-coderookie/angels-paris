@@ -4,11 +4,18 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
 import Header2 from './components/Header2/Header2';
+import TemplatePage from './pages/Template/TemplatePage';
+import PlayersPage from './pages/PlayersPage/PlayersPage';
 
 const Layout = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage/>} />
+      <Route path="/gallery" element={<TemplatePage name={'Galería'}/>} />
+      <Route path="/team" element={<PlayersPage/>} />
+      <Route path="/contact" element={<TemplatePage name={'Contacto'}/>} />
+      <Route path="/news" element={<TemplatePage name={'Noticias'}/>} />
+      <Route path="/season" element={<TemplatePage name={'Calendario'}/>} />
     </Routes>
   );
 };
