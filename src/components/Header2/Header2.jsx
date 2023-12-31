@@ -9,7 +9,7 @@ const Header2 = () => {
     const [open, setOpen] = useState(false);
     const menuLinks = [
         { name: "Home", url: "/" },
-        { name: "galeria", url: "/gallery" },
+        { name: "galería", url: "/gallery" },
         { name: "equipo", url: "/team" },
         { name: "calendario", url: "/season" },
         { name: "contacto", url: "/contact" },

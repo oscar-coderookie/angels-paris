@@ -1,6 +1,7 @@
 // Jugadores.jsx
 import React from 'react';
 import './PlayersPage.scss';
+import { Button } from 'antd';
 
 const PlayersPage = () => {
   // Supongamos que tienes una lista de jugadores con sus estadísticas
@@ -18,7 +19,7 @@ const PlayersPage = () => {
 
   return (
     <div className="jugadores-container">
-      <h2>Tabla de Jugadores:</h2>
+      <h2 className='jugadores__title'>Tabla de Jugadores:</h2>
       <table>
         <thead>
           <tr>
@@ -27,6 +28,7 @@ const PlayersPage = () => {
             <th>Posición</th>
             <th>Edad</th>
             <th>Dorsal</th>
+            <th>Stats</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +39,7 @@ const PlayersPage = () => {
               <td>{jugador.posicion}</td>
               <td>{jugador.dorsal}</td>
               <td>{jugador.edad}</td>
+              <td><Button ghost={true} type='text'>Ver</Button></td>
 
             </tr>
           ))}
