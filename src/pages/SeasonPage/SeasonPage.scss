@@ -1,0 +1,61 @@
+.calendario-container {
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .calendario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  
+    button {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    h2 {
+      margin: 0;
+    }
+  }
+  
+  .calendario-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .calendario-day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  
+    &.today {
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+  
+    &.current-month {
+      background-color: white;
+    }
+  
+    &.other-month {
+      color: #bbb;
+    }
+  }
+  

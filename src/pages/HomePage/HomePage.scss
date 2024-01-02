@@ -1,6 +1,6 @@
 .homepage {
     &-block {
-        background-image: url(../../assets/images/home-image.jpg);
+        background-image: url('https://www.japanhousesp.com.br/sites/japanhouse.com.saopaulo/files/2021-02/Site.jpg');
         height: 100vh;
         display: flex;
         align-items: flex-end;
@@ -8,6 +8,10 @@
         background-size: cover;
         background-position: center;
 
+        @media (max-width: 675px) {
+            background-image: url('https://images.unsplash.com/photo-1623947453126-3652fc16b2b0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtcG8lMjBkZSUyMGIlQzMlQTlpc2JvbHxlbnwwfHwwfHx8MA%3D%3D');
+
+        }
     }
 
     &-logo {
@@ -32,8 +36,8 @@
             margin: 0;
             padding: 0;
         }
-    
+
     }
 
-    
+
 }

@@ -7,16 +7,18 @@ import TemplatePage from './pages/Template/TemplatePage';
 import PlayersPage from './pages/PlayersPage/PlayersPage';
 import NewsPage from './pages/NewsPage/NewsPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import SeasonPage from './pages/SeasonPage/SeasonPage';
+import GalleryPage from './pages/GalleryPage/GalleryPage';
 
 const Layout = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage/>} />
-      <Route path="/gallery" element={<TemplatePage name={'Galería'}/>} />
+      <Route path="/gallery" element={<TemplatePage name={`Galería`}/>} />
       <Route path="/team" element={<PlayersPage/>} />
       <Route path="/contact" element={<ContactPage/>} />
       <Route path="/news" element={<NewsPage/>} />
-      <Route path="/season" element={<TemplatePage name={'Calendario'}/>} />
+      <Route path="/season" element={<SeasonPage/>} />
     </Routes>
   );
 };

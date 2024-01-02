@@ -107,12 +107,12 @@
             letter-spacing: 2px;
             font-weight: 300;
             font-size: 18px;
-            transition: all 0.4s ease-in-out;
+            transition: all 0.7s ease-in-out;
             /* Cambiado de width a background */
 
             &:hover {
                 font-weight: 600;
-                background: rgba(255, 255, 255, 0.815);
+                background: #33CCCC;;
                 width: 100%;
                 color: #1a1a1a;
             }
